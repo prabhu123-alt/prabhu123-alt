@@ -1,0 +1,1585 @@
+$mobile : 767px;
+$tab : 1024px;
+$laptop: 1400px;
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: $tab) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (max-width: $laptop) {
+        @content;
+    }
+}
+
+
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('./assests/fonts/GothamPro-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('./assests/fonts/GothamPro-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('./assests/fonts/GothamPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('./assests/fonts/GothamPro-Bold.woff2')('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('./assests/fonts/GothamPro-Bold.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@mixin my-pra {
+    font-family: 'Gotham Pro';
+    font-size: 14px;
+    line-height: 22.1px;
+    font-weight: 400;
+    color: black;
+}
+
+@mixin my-pragraph {
+    font-size: 16px;
+    font-family: 'Gotham Pro';
+    font-weight: 400;
+    line-height: 25.6px;
+}
+
+@mixin my-heading {
+    font-size: 32px;
+    font-family: 'Gotham Pro';
+    line-height: 34.5px;
+    font-weight: 500;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include laptop {
+        padding: 0px;
+
+    }
+
+    @include tab {
+        padding: 0 24px;
+    }
+
+    @include mobile {
+        padding: 0 16px;
+    }
+
+
+}
+
+.section {
+    @include tab() {
+        padding: 0px 24px;
+    }
+
+    @include mobile() {
+        padding: 0px 16px;
+    }
+
+    .Insurance-for-you {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 0px;
+
+        .insurance-elements {
+            max-width: 520px;
+            width: 100%;
+
+            .info-pra {
+                @include my-pra;
+            }
+
+            h1 {
+                font-family: 'Gotham Pro';
+                font-weight: 500;
+                font-size: 56px;
+                line-height: 63.56px;
+                padding-bottom: 24px;
+
+                @include mobile() {
+                    font-size: 28px;
+                    line-height: 30.4px;
+                }
+            }
+
+
+            .info-pragraph {
+                @include my-pragraph;
+
+            }
+
+            .input-btn {
+                display: flex;
+                gap: 24px;
+                padding: 40px 0px 56px 1px;
+                align-items: center;
+
+                @include mobile() {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                // .btn-click {
+                //     max-width: 343px;
+                //     width: 100%;
+
+                .btn-button {
+                    max-width: 343px;
+                    width: 100%;
+                    background: rgba(242, 101, 34, 1);
+                    text-decoration: none;
+                    font-family: 'Gotham Pro';
+                    font-size: 16px;
+                    line-height: 18.2px;
+                    font-weight: 500;
+                    color: #ffffff;
+                    padding: 14px 60px;
+                    border-radius: 100px;
+                    text-align: center;
+                    cursor: pointer;
+
+                    @include mobile {
+                        padding: 16px 130px;
+                        max-width: initial;
+                    }
+                }
+
+                // }
+
+
+
+
+                .input-part {
+                    padding: 10px 12px 10px 12px;
+                    border-radius: 8px;
+                    border: 0.4px solid rgb(179, 176, 177);
+                    display: flex;
+
+                    @include mobile() {
+                        max-width: 343px;
+                        width: 100%;
+                    }
+
+                }
+            }
+
+        }
+
+        input {
+            text-decoration: none;
+            font-family: 'Gotham Pro';
+            font-size: 14px;
+            line-height: 16.2px;
+            font-weight: 400;
+            border: none;
+            outline: none;
+        }
+
+
+        .insurance-img {
+            img {
+                max-width: 756px;
+                width: 100%;
+
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+    .incestent-calculater {
+        padding: 32px 0px;
+
+        .Investent-list {
+            display: flex;
+            border-radius: 32px;
+            padding: 16px;
+            gap: 24px;
+            background: rgb(237, 244, 253);
+
+            @include mobile {
+                overflow: scroll;
+            }
+
+            li {
+                list-style-type: none;
+                padding: 8px 12px 8px 12px;
+                gap: 8px;
+
+                @include mobile {
+                    min-width: max-content;
+                }
+
+
+
+                a {
+
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-family: 'Gotham Pro';
+                    line-height: 18.6px;
+                    font-weight: 400;
+
+                }
+            }
+
+            .inv-link {
+                padding: 6px 12px 6px 12px;
+                background: #C7E0F8;
+                border-radius: 40px;
+
+                @include mobile {
+                    display: flex;
+                    align-items: center;
+                }
+
+                img {
+
+                    padding-right: 10px;
+
+                }
+            }
+
+
+        }
+    }
+
+    .blogs-part {
+        padding: 40px 0px;
+
+        .blogs-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h2 {
+                @include my-heading;
+
+                @include mobile() {
+                    font-size: 24px;
+                    line-height: 24.5px;
+                }
+            }
+
+            li {
+                font-weight: 500;
+                list-style-type: none;
+                font-size: 16px;
+                line-height: 18.6px;
+                font-family: 'Gotham Pro';
+                display: flex;
+                align-items: center;
+
+                img {
+                    padding-left: 10px;
+                }
+
+                @include mobile() {
+                    display: none;
+                }
+            }
+        }
+
+        .blogs-cards {
+            display: flex;
+            gap: 24px;
+            padding: 24px 0px 40px 0px;
+
+            @include mobile() {
+                flex-wrap: wrap;
+            }
+
+            .cards-box {
+                width: 33.33%;
+
+                @include mobile() {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    max-width: 343px;
+                    padding-top: 24px;
+                    gap: 8px;
+                }
+
+                .cards-img {
+                    img {
+                        padding-left: 10px;
+                        border-radius: 20px;
+                        width: 100%;
+
+                        @include mobile() {
+                            max-width: 125px;
+                            height: 112px;
+                            border-radius: 12px;
+                        }
+                    }
+                }
+
+                .cards-elements {
+                    padding-top: 24px;
+
+                    @include mobile() {
+
+                        max-width: 211px;
+                        padding: 0px;
+
+                    }
+
+
+                    .card-btn1 {
+                        text-decoration: none;
+                        padding: 4px 12px 4px 12px;
+                        background: rgba(237, 244, 253, 1);
+                        border-radius: 45px;
+                        font-size: 12px;
+                        line-height: 19.6px;
+                        color: rgba(25, 65, 122, 1);
+                        font-weight: 500;
+                        font-family: 'Gotham Pro';
+                    }
+
+                    h3 {
+                        font-family: 'Gotham Pro';
+                        font-size: 16px;
+                        line-height: 18.56px;
+                        letter-spacing: -0.2px;
+                        padding: 16px 0px 16px 0px;
+
+                        @include mobile() {
+                            font-size: 14px;
+                            line-height: 14.5px;
+                        }
+                    }
+
+                    h6 {
+                        display: none;
+
+                        @include mobile() {
+                            display: block;
+                            @include my-pragraph;
+                            color: #757172;
+
+                        }
+                    }
+
+                    p {
+
+                        font-family: "Gotham Pro";
+                        font-size: 14px;
+                        line-height: 22.1px;
+                        font-weight: 400;
+                        color: rgba(117, 113, 114, 1);
+
+                        @include mobile() {
+                            display: none;
+                        }
+                    }
+
+                    div>p {
+                        @include my-pra;
+
+                        @include mobile() {
+                            display: none;
+                        }
+                    }
+
+                    .card-btn {
+                        padding-top: 24px;
+
+                        @include mobile() {
+                            display: none;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            /* padding: 4px 12px 4px 12px; */
+                            /* background: rgba(237, 244, 253, 1); */
+                            border-radius: 100px;
+                            font-size: 16px;
+                            line-height: 18.5px;
+                            /* margin-top: 24px; */
+                            font-weight: 500;
+                            padding: 10px 20px;
+                            border: 0.4px solid rgba(117, 113, 114, 1);
+                            color: black;
+                            font-family: 'Gotham Pro';
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    .Podcasts-part {
+        padding: 40px 0px;
+
+        .Podcasts-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            h2 {
+                @include my-heading;
+
+                @include mobile() {
+                    font-size: 24px;
+                    line-height: 24.5px;
+                }
+            }
+
+            li {
+                font-weight: 500;
+                list-style-type: none;
+                font-size: 16px;
+                line-height: 18.6px;
+                font-family: 'Gotham Pro';
+                display: flex;
+                align-items: center;
+
+                img {
+                    padding-left: 10px;
+
+                }
+
+                @include mobile() {
+                    display: none;
+                }
+
+            }
+        }
+
+        .Podcasts-cards {
+            display: flex;
+            gap: 24px;
+            padding: 24px 0px 40px 0px;
+
+            @include mobile() {
+                flex-wrap: wrap;
+
+
+                font-size: 24px;
+                line-height: 24.5px;
+            }
+        }
+
+        .cards-box {
+            width: 33.33%;
+
+            @include mobile() {
+                width: 100%;
+                display: flex;
+                flex-direction: row-reverse;
+                max-width: 343px;
+                gap: 8px;
+                padding-top: 24px;
+            }
+
+
+
+            .cards-img {
+
+
+                img {
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                    @include mobile() {
+                        max-width: 125px;
+                        height: 112px;
+                        border-radius: 12px;
+                    }
+
+
+                }
+            }
+
+
+            .cards-elements {
+                padding-top: 20px;
+
+                @include mobile() {
+
+                    max-width: 211px;
+                    padding: 0px;
+
+                }
+
+
+                .card-btn1 {
+                    text-decoration: none;
+                    padding: 4px 12px 4px 12px;
+                    background: rgba(237, 244, 253, 1);
+                    border-radius: 45px;
+                    font-size: 12px;
+                    line-height: 19.6px;
+                    color: rgba(25, 65, 122, 1);
+                    font-weight: 600;
+                    font-family: 'Gotham Pro';
+                }
+
+                h3 {
+                    font-family: 'Gotham Pro';
+                    font-size: 16px;
+                    line-height: 18.56px;
+                    letter-spacing: -0.2px;
+                    padding: 16px 0px 16px 0px;
+                    @include mobile() {
+                        font-size: 14px;
+                        line-height: 14.5px;
+                    }
+                }
+
+                h6 {
+                    display: none;
+
+                    @include mobile() {
+                        display: block;
+                        @include my-pragraph;
+                        color: #757172;
+
+                    }
+                }
+
+                p {
+                    @include my-pra;
+
+                    @include mobile() {
+                        display: none;
+                    }
+
+                }
+            }
+        }
+
+
+    }
+
+
+    .Videos-part {
+        padding: 0px;
+
+
+        .Videos-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h2 {
+            @include my-heading;
+
+            @include mobile() {
+                font-size: 24px;
+                line-height: 24.5px;
+            }
+        }
+
+        li {
+            font-weight: 500;
+            list-style-type: none;
+            font-size: 16px;
+            line-height: 18.6px;
+            font-family: 'Gotham Pro';
+            display: flex;
+            align-items: center;
+
+            img {
+                padding-left: 10px;
+            }
+
+            @include mobile() {
+                display: none;
+            }
+        }
+
+        .Videos-cards {
+            display: flex;
+            gap: 24px;
+            padding: 24px 0px 40px 0px;
+
+            @include mobile() {
+                flex-wrap: wrap;
+                font-size: 24px;
+                line-height: 24.5px;
+            }
+
+
+            .cards-box {
+                width: 33.33%;
+
+                @include mobile() {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    max-width: 343px;
+                   gap: 8px;
+                    padding-top: 24px;
+                }
+
+                .cards-img img {
+                    border-radius: 20px;
+                    width: 100%;
+
+                    @include mobile() {
+                        max-width: 125px;
+                        height: 112px;
+                        border-radius: 12px;
+                    }
+                }
+
+
+
+                .card-btn1 {
+                    text-decoration: none;
+                    padding: 4px 12px 4px 12px;
+                    background: rgba(255, 239, 228, 1);
+                    border-radius: 45px;
+                    font-size: 12px;
+                    line-height: 19.6px;
+                    color: rgba(25, 65, 122, 1);
+                    font-weight: 600;
+                    font-family: 'Gotham Pro';
+                }
+
+                h3 {
+                    font-family: 'Gotham Pro';
+                    font-size: 16px;
+                    line-height: 18.56px;
+                    letter-spacing: -0.2px;
+                    padding: 16px 0px 16px 0px;
+                    @include mobile() {
+                        font-size: 14px;
+                        line-height: 14.5px;
+                    }
+                }
+
+                div>p {
+                    @include my-pra;
+
+                    @include mobile() {
+                        display: none;
+                    }
+                }
+
+                .cards-elements {
+                    padding-top: 24px;
+
+                    @include mobile() {
+
+                        max-width: 211px;
+                        padding: 0px;
+
+                    }
+
+
+
+                    h6 {
+                        display: none;
+
+                        @include mobile() {
+                            display: block;
+                            @include my-pragraph;
+                            color: #757172;
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .Guides-part {
+        padding: 0px;
+
+
+        .Guides-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h2 {
+            @include my-heading;
+
+            @include mobile() {
+                font-size: 24px;
+                line-height: 24.5px;
+            }
+        }
+
+        li {
+            font-weight: 500;
+            list-style-type: none;
+            font-size: 16px;
+            line-height: 18.6px;
+            font-family: 'Gotham Pro';
+            display: flex;
+            align-items: center;
+
+            img {
+                padding-left: 10px;
+            }
+
+            @include mobile() {
+                display: none;
+            }
+        }
+
+        .Guides-cards {
+            display: flex;
+            gap: 24px;
+            padding: 24px 0px 40px 0px;
+
+            @include mobile() {
+                flex-wrap: wrap;
+            }
+
+            .cards-box {
+                width: 33.33%;
+
+                @include mobile() {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    max-width: 343px;
+                    gap: 8px;
+                    padding-top: 24px;
+
+                }
+
+
+                .cards-img img {
+                    border-radius: 20px;
+                    width: 100%;
+
+                    @include mobile() {
+                        max-width: 125px;
+                        height: 112px;
+                        border-radius: 12px;
+                    }
+                }
+
+
+
+                .card-btn1 {
+                    text-decoration: none;
+                    padding: 4px 12px 4px 12px;
+                    background: rgba(237, 244, 253, 1);
+                    border-radius: 45px;
+                    font-size: 12px;
+                    line-height: 19.6px;
+                    color: rgba(25, 65, 122, 1);
+                    font-weight: 500;
+                    font-family: 'Gotham Pro';
+                }
+
+                h3 {
+                    font-family: 'Gotham Pro';
+                    font-size: 16px;
+                    line-height: 18.56px;
+                    letter-spacing: -0.2px;
+                    padding: 16px 0px 16px 0px;
+                    @include mobile() {
+                        font-size: 14px;
+                        line-height: 14.5px;
+                    }
+                }
+
+                .cards-elements {
+                    padding-top: 24px;
+
+                    @include mobile() {
+
+                        max-width: 211px;
+                        padding: 0px;
+
+                    }
+
+
+                    p {
+                        font-family: "Gotham Pro";
+                        font-size: 14px;
+                        line-height: 22.1px;
+                        font-weight: 400;
+                        color: rgba(117, 113, 114, 1);
+
+                        @include mobile() {
+                            display: none;
+                        }
+                    }
+
+                    h6 {
+                        display: none;
+
+                        @include mobile() {
+                            display: block;
+                            @include my-pragraph;
+                            color: #757172;
+
+
+                        }
+                    }
+                }
+
+
+                .card-btn {
+
+                    padding-top: 24px;
+
+                    @include mobile() {
+                        display: none;
+                    }
+
+
+                    a {
+                        text-decoration: none;
+                        /* padding: 4px 12px 4px 12px; */
+                        /* background: rgba(237, 244, 253, 1); */
+                        border-radius: 100px;
+                        font-size: 16px;
+                        line-height: 18.5px;
+                        /* margin-top: 24px; */
+                        font-weight: 500;
+                        padding: 10px 20px;
+                        border: 0.4px solid rgba(117, 113, 114, 1);
+                        color: black;
+                        font-family: 'Gotham Pro';
+                    }
+                }
+            }
+        }
+    }
+
+    .financial-future {
+        padding-top: 40px;
+
+        h3 {
+            font-size: 32px;
+            font-family: "Gotham Pro";
+            line-height: 34.5px;
+            font-weight: 500;
+            padding-bottom: 32px;
+            @include mobile(){
+                font-size:24px;
+                line-height: 24px;
+            }
+        }
+
+        .future-cards {
+            display: flex;
+            gap: 24px;
+            justify-content: space-between;
+
+            @include tab {
+                flex-wrap: wrap;
+            }
+
+            @include mobile {
+                flex-wrap: wrap;
+
+            }
+        }
+
+        .future-box {
+            padding: 32px;
+            max-width: 302px;
+            width: 100%;
+            min-height: 315px;
+            border: 1px solid #B3B0B1;
+            border-radius: 24px;
+            @include mobile(){
+                padding: 16px;
+            }
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+
+
+        }
+
+        h2 {
+            font-family: "Gotham Pro";
+            font-size: 28px;
+            line-height: 30px;
+            font-weight: 500
+        }
+
+        h4 {
+            font-family: "Gotham Pro";
+            font-size: 24px;
+            line-height: 25px;
+            font-weight: 500;
+
+        }
+
+        .head-btn {
+            padding-top: 32px;
+            position: relative;
+
+            a {
+                position: absolute;
+                top: 197px;
+                padding: 8px 40px 8px 40px;
+                background: #C7E0F8;
+                border-radius: 100px;
+                text-decoration: none;
+                font-size: 16px;
+                line-height: 18.2px;
+                font-family: 'Gotham Pro';
+                font-weight: 500;
+            }
+        }
+    }
+
+
+
+    // -------------------tab-contaetne=--------------------
+    .faq {
+        padding: 40px 0px;
+
+        @include mobile() {
+            display: none;
+        }
+
+        .faq-hd {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+
+        .faq-tittle {
+            width: 70%;
+            color: var(--Grays-Black, #221f20);
+            font-family: "Gotham Pro";
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 34.56px;
+        }
+
+        .faq-img {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+            color: var(--Grays-Black, #221f20);
+            font-family: "Gotham Pro";
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 18.56px;
+
+            @include mobile() {
+                display: none;
+            }
+        }
+
+        .faq-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+        }
+
+        .tabs {
+            display: flex;
+            max-width: 412px;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            flex-shrink: 0;
+        }
+
+        /* Style the tabs */
+        .tablinks {
+            display: flex;
+            padding: 24px 40px;
+            align-items: center;
+            gap: 8px;
+            align-self: stretch;
+            border-left: 2px solid var(--Grays-Gray-200, #c8c6c7);
+            color: var(--Grays-Black, #221f20);
+            font-family: "Gotham Pro";
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 23.2px;
+            cursor: pointer;
+        }
+
+        .accordian-sec {
+            max-width: 844px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            flex: 1 0 0;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            width: 100%;
+        }
+
+        /* Style the active tab */
+        .activeTab {
+            border-left: 4px solid var(--Brand-orange-True-Orange, #f26e10);
+            font-weight: 600;
+        }
+
+        .accordion {
+            cursor: pointer;
+            width: 100%;
+            transition: 0.4s;
+            display: flex;
+            padding: 16px 0px;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--Brand-Dark-Blue-True-Dark-Blue, #19417a);
+            font-family: "Gotham Pro";
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            border-bottom: 1px solid var(--Grays-Gray-100, #dedcdd);
+        }
+
+        .accordion.active,
+        .accordion:hover {
+            font-weight: 600;
+        }
+
+        .active.accordion {
+            border: none;
+        }
+
+        .panel {
+            background-color: white;
+            overflow: hidden;
+            display: none;
+            border-bottom: 1px solid var(--Grays-Gray-100, #dedcdd);
+        }
+
+        .panel p {
+            color: var(--Grays-Black, #221f20);
+            font-family: "Gotham Pro";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18.56px;
+        }
+
+        .accordion::after {
+            content: "+";
+            font-size: 25px;
+            font-family: "Gotham Pro";
+            font-weight: 400;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .accordion.active::after {
+            content: "-";
+        }
+
+
+    }
+
+    .insurance-book {
+        display: flex;
+        gap: 24px;
+        padding: 40px 0px;
+
+        @include tab {
+            flex-wrap: wrap;
+        }
+
+        @include mobile {
+            flex-wrap: wrap;
+        }
+
+        .book-first {
+            background: #FFEFE4;
+            display: flex;
+            border-radius: 24px;
+            max-width: 629px;
+            border-radius: 24px;
+            width: 100%;
+
+            @include mobile() {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .book-elements {
+            padding: 40px 40px 32px 40px;
+
+            @include mobile() {
+                max-width: 295px;
+                max-height: 216px;
+                padding: 48px 24px 0px 24px;
+            }
+
+            .insurance-imges {
+                @include mobile() {
+                    display: flex;
+                    gap: 8px;
+                }
+            }
+
+            h2 {
+                @include my-heading;
+            }
+
+            p {
+                @include my-pra;
+                padding-top: 24px;
+
+                @include mobile() {
+                    padding: 0px;
+                }
+            }
+
+            img {
+                padding-top: 8px;
+
+                @include mobile() {
+                    width: 100px;
+                }
+            }
+
+            .book-first-btn {
+                padding-top: 24px;
+
+                @include mobile() {
+                    padding: 0px;
+
+                }
+
+
+
+                a {
+                    padding: 10px 20px;
+                    color: white;
+                    background: #19417A;
+                    text-decoration: none;
+                    font-size: 16px;
+                    line-height: 18.6px;
+                    border-radius: 100px;
+                    font-family: "Gotham Pro";
+
+                    @include mobile() {
+                        display: flex;
+                        padding: 10px 56px;
+                    }
+
+                }
+            }
+
+
+        }
+
+        .book-imge {
+            img {
+                max-width: 303px;
+
+                @include mobile() {
+                    max-width: 295px;
+                    padding-top: 10px;
+
+                }
+
+            }
+        }
+
+
+        .book-secound {
+            position: relative;
+            width: 100%;
+
+            .book-secound-elements {
+                position: absolute;
+                z-index: 1;
+                max-width: 629px;
+                min-height: 343px;
+                width: 100%;
+                padding: 40px 40px 32px 40px;
+                background: linear-gradient(90deg, #01AEF0 52.42%, rgba(0, 0, 0, 0) 108.03%);
+                border-radius: 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                @include mobile() {
+                    position: relative;
+                    z-index: 1;
+                    background: linear-gradient(180deg, #01AEF0 42.46%, rgba(0, 0, 0, 0) 113.68%);
+                    justify-content: normal;
+                    padding-top: 10px;
+
+                }
+
+                .book-heding {
+                    max-width: 243px;
+                    width: 100%;
+
+                    h2 {
+                        @include my-heading;
+                        color: white;
+                    }
+
+                    p {
+                        @include my-pra;
+                        color: white;
+                        padding-top: 24px;
+                    }
+                }
+
+                .book-btn {
+                    @include mobile() {
+                        padding-top: 10px;
+                    }
+
+                    a {
+                        padding: 10px 20px;
+                        color: white;
+                        background: #19417A;
+                        text-decoration: none;
+                        font-size: 16px;
+                        line-height: 18.6px;
+                        border-radius: 100px;
+                        font-family: "Gotham Pro";
+
+
+                    }
+                }
+
+            }
+
+            .book-secound-image {
+                img {
+                    position: relative;
+
+                    @include mobile {
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .searched-topic {
+        min-height: 380px;
+        gap: 24px;
+        margin-top: 20px;
+
+        .searched-topic-title {
+            margin-bottom: 30px;
+
+            h2 {
+                font-family: 'Gotham pro';
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 34.25px;
+            }
+        }
+
+        .all-insurance {
+            display: flex;
+            align-items: center;
+            gap: 24px 16px;
+            flex-wrap: wrap;
+
+            .insurance-list {
+                padding: 11px 17px 11px 17px;
+                background: rgba(241, 243, 252, 1);
+                border-radius: 45px;
+
+                a {
+                    font-size: 16px;
+                    font-family: 'Gotham pro';
+                    text-decoration: none;
+                    font-weight: 500;
+                    color: black;
+                }
+            
+            }
+            .none{
+                @include mobile(){
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+    .footer-elements {
+        background: rgba(25, 65, 122, 1);
+        padding: 80px 0px 80px 0px;
+
+        .footer-saving {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            justify-content: space-between;
+
+            .footer-title {
+                h3 {
+                    color: rgba(255, 255, 255, 1);
+                    font-family: 'Gotham pro';
+                    font-size: 20px;
+                    line-height: 23px;
+                    font-weight: 400;
+                    gap: 4px;
+                }
+            }
+
+            .footer-pragraph {
+
+
+                li {
+                    font-family: 'Gotham pro';
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 19.6px;
+                    color: rgba(255, 255, 255, 1);
+                    list-style-type: none;
+                    padding: 2px 0px 2px 0px;
+                    gap: 4px;
+
+                }
+            }
+
+        }
+
+        .footer-saving2 {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+
+
+            .footer-title {
+                h3 {
+                    color: rgba(255, 255, 255, 1);
+                    font-family: 'Gotham pro';
+                    font-size: 20px;
+                    line-height: 23px;
+                    font-weight: 400;
+                    gap: 4px;
+                }
+            }
+
+            .footer-pragraph {
+
+
+                li {
+                    font-family: 'Gotham pro';
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 19.6px;
+                    color: rgba(255, 255, 255, 1);
+                    list-style-type: none;
+                    padding: 2px 0px 2px 0px;
+                    gap: 4px;
+
+                }
+            }
+
+        }
+
+
+    }
+
+    .footer-social-media {
+        background: rgba(237, 244, 253, 1);
+        padding: 24px 0px;
+
+        .others-footer {
+            min-height: 130px;
+            display: flex;
+            justify-content: space-between;
+
+            @include mobile() {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .first-part-others-footer {
+                max-width: 519px;
+                border-right: 1px solid black;
+
+                @include mobile() {
+                    border-bottom: 1px solid black;
+                    border-right: none;
+                }
+
+
+                p {
+                    @include my-pra;
+                }
+            }
+
+            .secound-part-others-footer {
+                p {
+                    padding: 9px 89px 14px 5px;
+                    @include my-pra;
+
+                }
+
+                a {
+                    text-decoration: none;
+                    height: 32px;
+                    width: 32px;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    .register-office {
+        background: rgba(255, 255, 255, 1);
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        padding: 32px 0px 32px 0px;
+
+        .register-office-first {
+            max-width: 480px;
+            min-height: 68px;
+
+            h3 {
+                font-family: 'Gotham pro';
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            p {
+                font-family: 'Gotham Pro';
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                text-align: left;
+            }
+        }
+    }
+
+    .register-office-last {
+        max-width: 681px;
+        width: 100%;
+
+        h3 {
+            font-family: 'Gotham pro';
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+
+        p {
+            font-family: 'Gotham Pro';
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+        }
+    }
+
+    .Disclaimers {
+        width: 100%;
+        background: rgba(242, 110, 16, 1);
+        padding: 24px 0px 24px 0px;
+
+        .Disclaimers-LIC {
+            min-height: 68px;
+            display: flex;
+            justify-content: space-between;
+
+            .Disclaimers-title {
+                p {
+                    font-family: 'Gotham Pro';
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+
+        }
+
+        .Disclaimers-list {
+            a {
+                text-decoration: none;
+                gap: 24px;
+                font-family: 'Gotham Pro';
+                font-size: 14px;
+                line-height: 20px;
+                color: rgba(255, 255, 255, 1);
+                margin: 10px;
+            }
+
+        }
+    }
+}

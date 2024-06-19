@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>very hard js probelms</title>
+    <style>
+        body {
+            background-color: #ffffd8;
+        }
+
+        .all-element {
+            margin: 0 auto;
+            width: 400px;
+        }
+
+        .input-group {
+
+            width: max-content;
+            border: 2px solid brown;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            background-color: bisque;
+        }
+
+        .input-group-text {
+            color: black;
+            background: wheat;
+            padding: 12px;
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 600;
+        }
+
+        .form-control {
+            outline: none;
+            border: navajowhite;
+            padding: 12px;
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 40px;
+        }
+
+        button {
+            padding: 12px 16px 12px 16px;
+            height: 48px;
+            margin-top: 20px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            font-size: 16px;
+            color: black;
+            background-color: lightblue;
+            border-radius: 8px;
+            border: navajowhite;
+        }
+
+        .getData {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .positon {
+            display: flex;
+            justify-content: center;
+        }
+
+        #recived-data {
+            width: 250px;
+            background-color: saddlebrown;
+            color: wheat;
+            height: auto;
+            border-radius: 8px;
+            display: none;
+            margin-left: 43px;
+            padding: 24px;
+            margin-top: 20px;
+            
+        }
+
+
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="all-element">
+        <h1>user</h1>
+        <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">enter Name:- </span>
+            <input type="text" class="form-control" id="get-user" placeholder="ID" aria-label="Username"
+                aria-describedby="addon-wrapping">
+
+        </div>
+        <div class="positon">
+            <button type="button" id="get-btn">click</button>
+        </div>
+        <div class="getData">
+
+            <div id="recived-data">
+            
+
+            </div>
+        </div>
+
+
+        <script src="veryhard.js"></script>
+
+</body>
+
+</html>

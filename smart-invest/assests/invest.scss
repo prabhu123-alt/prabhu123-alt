@@ -1,0 +1,1257 @@
+$mobile : 767px;
+$tab : 1024px;
+$laptop: 1400px;
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+
+
+    }
+}
+
+@mixin tab {
+    @media (max-width: $tab) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (max-width: $laptop) {
+        @content;
+    }
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('./fonts/GothamPro-Light.woff2 format')('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('./fonts/GothamPro-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('./fonts/GothamPro-Medium.woff2 format')('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('./fonts/GothamPro-Bold.woff2')('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('./fonts/GothamPro-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+.smart-invest {
+    width: 100%;
+    height: 100%;
+
+    @include mobile() {
+        padding: 0px 16px;
+    }
+
+    .container {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+
+
+
+
+    }
+
+    .Rediance-invest {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 16px 40px;
+
+        @include mobile() {
+            padding: 16px;
+        }
+
+        @include tab() {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+        .rediance-elements {
+            width: 100%;
+
+
+            .btn-red {
+                padding: 8px 16px 8px 16px;
+                border-radius: 16px;
+                background-color: #FFEFE4;
+                color: #AA3800;
+                text-decoration: none;
+                font-family: 'Gotham Pro';
+                font-size: 14px;
+                line-height: 22.4px;
+                font-weight: 700;
+
+            }
+
+            h1 {
+                font-size: 28px;
+                font-family: 'Gotham Pro';
+                font-weight: 400;
+                line-height: 30.4px;
+                padding-top: 24px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 25px;
+                font-family: 'Gotham Pro';
+                font-weight: 400;
+                letter-spacing: -0.3px;
+                padding-top: 16px;
+            }
+
+
+            .btn-before {
+                display: flex;
+                gap: 24px;
+                justify-content: space-between;
+                padding-top: 24px;
+
+                @include mobile() {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .btn-before-side {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-family: 'Gotham Pro';
+                        color: #221F20;
+                        font-weight: 400;
+                        position: relative;
+                        padding-left: 22px;
+
+                        &::before {
+                            content: url(./images/currect-symbol.png);
+                            position: absolute;
+                            top: 0px;
+                            left: -9px;
+                            /* right: 2px; */
+                            align-items: center;
+                            display: flex;
+                            gap: 16px;
+
+                        }
+                    }
+
+
+
+                }
+            }
+
+            .button-click {
+                display: flex;
+                /* justify-content: space-around; */
+                gap: 5;
+                gap: 16px;
+                padding-top: 20px;
+
+                @include mobile() {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .btn-blue1 {
+                    padding: 0px 24px 0px 24px;
+                    background: #19417A;
+                    border-radius: 100px;
+                    border-radius: 100;
+                    height: 48px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .btn-blue {
+                        font-size: 16px;
+                        color: white;
+                        font-family: 'Gotham Pro';
+                        line-height: 18.56px;
+                        font-weight: 400;
+                    }
+
+                }
+
+                .btn-white1 {
+                    padding: 0px 24px 0px 24px;
+                    width: 100%;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 0.4px solid #757172;
+                    border-radius: 100px;
+
+                    .btn-white {
+                        font-size: 16px;
+                        line-height: 18px;
+                        font-family: 'Gotham Pro';
+                        font-weight: 400;
+                        color: #1C2945;
+                    }
+
+                }
+            }
+        }
+
+        .readiance-imge-elements {
+            max-width: 737px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+
+            .readiance-imge {
+                width: 100%;
+
+                .picture-tag {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    img {
+                        width: 93%;
+
+                        @include mobile() {
+                            width: 100%;
+                        }
+
+
+                    }
+                }
+            }
+
+
+
+            .all-elements {
+
+                background: url(./images/bg-image.png);
+                align-items: center;
+                background-position: 100%;
+                background-repeat: no-repeat;
+                background-size: 98% 100%;
+                display: grid;
+                justify-content: center;
+                padding: 40px 81pt 40px 10pc;
+                width: 100%;
+
+                @include mobile() {
+                    background: #edf4fd;
+                    border-radius: 0 0 24px 3pc;
+                    grid-template-columns: 100%;
+                    padding: 2pc 2pc 3pc;
+                }
+
+
+                .rediance-btomm-elments {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 24px;
+                    position: relative;
+                    top: -12px;
+
+                    .arrow-left {
+                        position: absolute;
+                        left: -60px;
+                        top: 77px;
+
+                        @include mobile() {
+                            display: none;
+                        }
+
+                        img {
+                            padding: 8px;
+                            background: #C7E0F8;
+                            border-radius: 100px;
+                        }
+                    }
+                }
+
+                .arrow-right {
+                    position: absolute;
+                    right: -60px;
+                    top: 77px;
+
+                    @include mobile() {
+                        display: none;
+                    }
+
+                    img {
+                        padding: 8px;
+                        background: #C7E0F8;
+                        border-radius: 100px;
+                    }
+                }
+            }
+        }
+
+        h2 {
+            font-size: 32px;
+            font-family: 'Gotham Pro';
+            line-height: 34.56px;
+            font-weight: 500;
+
+        }
+
+        h6 {
+            font-family: Gotham Pro;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.24px;
+            letter-spacing: -0.20000000298023224px;
+            text-align: left;
+            padding-top: 8px;
+        }
+
+        p {
+
+            font-family: Gotham Pro;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 13.92px;
+            text-align: left;
+            padding-top: 24px;
+        }
+
+        .all-btn {
+            display: flex;
+            gap: 16px;
+            padding: 8px 0px;
+            border-bottom: 0.4px solid #DEDCDD;
+
+            .btn-buy {
+                display: flex;
+                padding: 0px 24px 0px 24px;
+                background: #19417A;
+                border-radius: 100px;
+                height: 40px;
+                justify-content: center;
+                align-items: center;
+
+                @include mobile() {
+                    width: 100%;
+                }
+
+                a {
+                    font-family: 'Gotham Pro';
+                    font-size: 14px;
+                    color: white;
+                    text-decoration: none;
+                    line-height: 16.24px;
+                }
+            }
+
+            .btn-leran {
+                padding: 0px 24px 0px 24px;
+                border: 0.4px solid #757172;
+                border-radius: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @include mobile() {
+                    width: 100%;
+                }
+
+                a {
+                    font-size: 14px;
+                    font-family: 'Gotham Pro';
+                    color: darkblue;
+                    text-decoration: none;
+                    font-weight: 400;
+                    line-height: 16.24px;
+                }
+
+            }
+        }
+    }
+
+    .key-fetures {
+        padding: 16px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @include mobile() {
+            padding: 16px 0px;
+        }
+
+        .list-fetures {
+            padding: 16px;
+            background: #EDF4FD;
+            border-radius: 32px;
+            display: flex;
+            gap: 24px;
+            align-items: center;
+
+            @include tab() {
+
+                overflow: scroll;
+            }
+
+            .btn-before {
+                padding: 6px 12px 6px 12px;
+                background: #C7E0F8;
+                display: flex;
+                align-items: center;
+                animation: 40px;
+                border-radius: 40px;
+                justify-content: center;
+
+            }
+
+            .btn-before::before {
+                content: url(./images/lessthan.png);
+            }
+
+
+
+
+            a {
+                text-decoration: none;
+                color: #1C2945;
+                font-size: 14px;
+                font-family: 'Gotham Pro';
+                font-weight: 400;
+                line-height: 19px;
+
+                @include mobile() {
+                    min-width: max-content;
+                    align-items: center;
+                    display: flex;
+
+                }
+            }
+        }
+
+        .key-fetures-prat-two {
+
+            h3 {
+                font-size: 32px;
+                line-height: 34.2px;
+                font-weight: 500;
+                font-family: 'Gotham Pro';
+            }
+
+            .cards-key {
+                display: flex;
+                gap: 24px;
+                padding-top: 24px;
+                justify-content: space-between;
+
+                @include mobile() {
+                    flex-wrap: wrap;
+                    gap: 8px;
+                }
+
+                .cards-box {
+                    padding: 32px;
+                    border: 0.4px solid #B3B0B1;
+                    border-radius: 24px;
+                    max-width: 302px;
+                    width: 100%;
+
+                    @include mobile() {
+                        padding: 16px;
+                        max-width: 167px;
+                    }
+
+                    h4 {
+
+                        font-size: 20px;
+                        line-height: 23px;
+                        font-family: 'Gotham Pro';
+                        font-weight: 400;
+
+                        @include mobile() {
+                            font-size: 16px;
+                        }
+                    }
+
+                    p {
+                        font-family: 'Gotham Pro';
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 19.6px;
+                        letter-spacing: -0.20000000298023224px;
+                        text-align: left;
+
+                        @include mobile() {
+                            line-height: 16px;
+                            font-size: 12px;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .plan-option {
+        background: #EDF4FD;
+
+        .all-paln {
+            padding: 48px 40px;
+            display: flex;
+            gap: 24px;
+
+            @include tab() {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .plain-img {
+                img {
+                    width: 100%;
+                    max-width: 715px;
+                }
+            }
+
+
+            .plan-famliy-care {
+
+
+                h2 {
+                    font-family: Gotham Pro;
+                    font-size: 32px;
+                    font-weight: 400;
+                    line-height: 34.56px;
+                    text-align: left;
+                    padding-bottom: 24px;
+                }
+
+                h3 {
+                    background: #FFEFE4;
+                    font-size: 16px;
+                    line-height: 18px;
+                    font-weight: 500;
+                    font-family: 'Gotham Pro';
+                    padding: 17px 24px 16px 24px;
+                    border-radius: 8px 8px 1px 1px;
+                    width: 144px;
+                    color: black;
+
+                }
+
+                .Family-Care {
+                    .family-pragarpah {
+                        font-family: Gotham Pro;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 25.6px;
+                        letter-spacing: -0.30000001192092896px;
+                        text-align: left;
+
+                    }
+
+                    .faq-section {
+                        min-width: max-content;
+
+                        .tabs {
+                            display: flex;
+                            /* flex-direction: column; */
+
+                            align-items: flex-start;
+                            flex-shrink: 0;
+
+                            padding-bottom: 10px;
+
+                            @include mobile() {
+                                font-size: 12px;
+
+
+                            }
+
+                            .activeTab {
+                                border-bottom: 4px solid #f26e10;
+                                font-weight: 600;
+                                background: #FFEFE4;
+                                padding: 17px 24px 17px 24px;
+                                height: 52px;
+
+                            }
+
+                            .tablinks {
+                                padding: 17px 24px 17px 24px;
+                            }
+
+                        }
+
+                    }
+
+                    .family-pra {
+                        p {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 16px;
+                            padding-top: 24px;
+                            font-family: Gotham Pro;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 20.72px;
+                            text-align: left;
+                            position: relative;
+                            left: 30px;
+
+                            &::before {
+                                content: url(./images/currect-symbol.png);
+                                position: absolute;
+                                left: -34px;
+                            }
+
+
+
+                        }
+
+
+                    }
+                }
+            }
+
+        }
+    }
+
+    .Sample-Illustration {
+        background: #FFFFFF;
+        padding: 16px 0px;
+
+        .redaince-smart {
+            padding: 32px 0px;
+
+            .sample-pra-heading {
+                p {
+                    font-size: 16px;
+                    line-height: 25px;
+                    font-family: 'Gotham Pro';
+                    font-weight: 400;
+
+                }
+
+                h2 {
+                    font-size: 32px;
+                    line-height: 34.2px;
+                    font-weight: 500;
+                    font-family: 'Gotham Pro';
+                    padding-bottom: 40px;
+
+                    @include mobile() {
+                        font-size: 24px;
+                        list-style: 24px;
+                    }
+                }
+            }
+
+            .table-form {
+                border: 2px solid #19417A;
+                border-radius: 24px;
+
+                @include tab() {
+                    overflow: scroll;
+                }
+
+                table {
+
+                    border-collapse: collapse;
+
+                    width: 100%;
+
+
+                    tr:first-child th:first-child {
+                        border-top-left-radius: 22px;
+
+                    }
+
+                    th:last-child {
+                        border-top-right-radius: 22px;
+                    }
+
+
+                    th {
+                        font-size: 18px;
+                        line-height: 24px;
+                        font-family: 'Gotham Pro';
+                        font-weight: 400;
+                        padding: 8px 24px 8px 24px;
+                        max-width: 210px;
+                        background: #19417A;
+                        color: white;
+
+                        span {
+                            font-size: 16px;
+
+
+                        }
+
+
+
+                    }
+
+                    td {
+                        border-top: 1px solid #19417A;
+                        padding: 16px 24px 16px 24px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-family: 'Gotham Pro';
+                        text-align: center;
+                        color: #221F20;
+
+
+
+                    }
+
+                    td:last-child {
+                        opacity: 63%;
+                    }
+                }
+            }
+
+
+        }
+
+        .Visualize-your-plan {
+
+
+            padding: 16px 0px;
+
+            @include tab() {
+                overflow-x: scroll;
+            }
+
+            h2 {
+                font-size: 32px;
+                font-family: 'Gotham Pro';
+                line-height: 34.2px;
+                font-weight: 400;
+            }
+
+            .all-imges {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 80px;
+
+
+
+            }
+
+            .tabing {
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+                padding-top: 32px;
+                cursor: pointer;
+
+                .activeTabs {
+                    font-family: 'Gotham Pro';
+                    font-size: 18px;
+                    color: #F26E10;
+                    line-height: 24px;
+                    border-bottom: 2px solid #f26E10;
+                    font-weight: 400;
+                }
+
+                .tablinked {
+                    font-family: 'Gotham Pro';
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 400;
+
+                }
+
+            }
+
+            .all-visualize-cards {
+
+                top: 461px;
+                left: 24px;
+                display: flex;
+                gap: 16px;
+                padding-bottom: 60px;
+                padding-top: 60px;
+
+                .cards-first {
+                    padding: 16px;
+                    background: #FFEFE4;
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                        line-height: 23px;
+                        color: #221F20;
+                        font-family: 'Gotham Pro';
+                        font-weight: 500;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 19px;
+                        font-weight: 400;
+                        font-family: 'Gotham Pro';
+                        color: #AA3800;
+
+                    }
+
+                }
+
+                .cards-secound {
+                    padding: 16px;
+                    background: #FFD0AF;
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                        line-height: 23px;
+                        color: #221F20;
+                        font-family: 'Gotham Pro';
+                        font-weight: 500;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 19px;
+                        font-weight: 400;
+                        font-family: 'Gotham Pro';
+                        color: #AA3800;
+
+                    }
+
+
+                }
+
+                .cards-third {
+                    padding: 16px;
+                    background: #FFB17E;
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                        line-height: 23px;
+                        color: #221F20;
+                        font-family: 'Gotham Pro';
+                        font-weight: 500;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 19px;
+                        font-weight: 400;
+                        font-family: 'Gotham Pro';
+                        color: #AA3800;
+
+                    }
+
+
+                }
+
+                .cards-fourth {
+                    padding: 16px;
+                    background: #C64A00;
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                        line-height: 23px;
+                        color: white;
+                        font-family: 'Gotham Pro';
+                        font-weight: 500;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 19px;
+                        font-weight: 400;
+                        font-family: 'Gotham Pro';
+                        color: whitesmoke;
+
+                        span {
+                            color: white;
+                        }
+
+
+                    }
+
+
+
+                }
+            }
+        }
+    }
+
+    .Eligibility-Criteria {
+        h2 {
+            font-size: 32px;
+            line-height: 34.56px;
+            font-family: 'Gotham Pro';
+            font-weight: 400;
+            padding-bottom: 40px;
+        }
+
+
+        .all-content {
+            display: flex;
+
+            .tab-six {
+                max-width: 412px;
+                width: 100%;
+
+                .tablinkcrad {
+                    padding: 24px 40px 24px 40px;
+                    font-family: 'Gotham Pro';
+                    font-size: 20px;
+                    line-height: 32.5px;
+                    font-weight: 500;
+                    cursor: pointer;
+
+                }
+
+                .activTabn {
+                    border-left: 4px solid #F26E10;
+
+                }
+            }
+
+            .all-tab {
+                width: 100%;
+
+                .section-panels {
+                    margin-bottom: 40px;
+                    border-bottom: 2px solid #DEDCDD;
+                    padding: 0px 0px 24px 0px;
+
+                }
+
+                .accordian-part {
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-family: 'Gotham Pro';
+                    font-weight: 500;
+                    color: #19417A;
+                    display: flex;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    padding: 16px 0px 16px 0px;
+                    margin-bottom: 16px;
+                    transition: 0.4s;
+
+
+                }
+
+
+
+                .accordian-part::after {
+                    content: "+";
+                    font-size: 25px;
+                    font-family: "Gotham Pro";
+                    font-weight: 400;
+                    float: right;
+                    margin-left: 5px;
+
+                }
+
+                .accordian-part.activet::after {
+                    content: "-";
+                }
+
+                .panels {
+                    ul {
+                        font-size: 14px;
+                        line-height: 16.24px;
+                        font-family: 'Gotham Pro';
+                        font-weight: 500;
+                        letter-spacing: -0.2px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        li {
+                            font-family: Gotham Pro;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 25.6px;
+                            letter-spacing: -0.30000001192092896px;
+                            text-align: left;
+                            margin-left: 22px;
+
+                        }
+                    }
+
+                }
+
+
+            }
+
+        }
+    }
+
+    .slick-sliders {
+        padding: 16px 0px;
+
+        .slick-dots li button:before {
+            font-size: 12px !important;
+        }
+
+        .Component-slick {
+
+
+            .slick-slideress-components {
+                display: flex;
+                gap: 98px;
+                width: 100%;
+
+                @include mobile() {
+                    flex-direction: column;
+                    gap: 24px;
+                    text-align: center;
+                }
+
+                .image {
+                    position: relative;
+
+                    @include mobile() {
+                        display: none;
+                    }
+                }
+
+
+                .back-imge {
+                    height: 516px;
+                    position: relative;
+                    width: 504px;
+
+                }
+
+                .frount-image {
+                    border-radius: 50%;
+                    display: block;
+                    height: 4in;
+                    left: 122px;
+                    position: absolute;
+                    top: 66px;
+                    width: 4in;
+                    z-index: 1;
+                }
+
+                .Component-others {
+                    position: relative;
+                    padding-top: 148px;
+                    width: 100%;
+
+                    @include mobile() {
+                        padding-top: 24px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 18.56px;
+                        font-weight: 400;
+                        font-family: 'Gotham Pro';
+                        margin-bottom: 24px;
+                    }
+
+                    h2 {
+                        font-size: 32px;
+                        line-height: 34px;
+                        font-weight: 500;
+                        font-family: 'Gotham Pro';
+                        margin-bottom: 8px;
+                    }
+
+                    div p {
+                        color: #F26E10;
+                        font-size: 24px;
+                        line-height: 25px;
+                        font-family: 'Gotham Pro';
+                        font-weight: 500;
+
+                    }
+
+                    div+p {
+
+                        font-size: 14px;
+                        line-height: 22px;
+                        font-family: 'Gotham Pro';
+                        font-weight: 400;
+                        color: #615D5F;
+
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    .fund-protofolio {
+        padding: 16px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 24px;
+
+
+        .header-pro {
+            h2{
+                font-size: 32px;
+                line-height: 34.2px;
+                font-family: 'Gotham Pro';
+                font-weight: 400;
+            }
+        }
+        .fund-cards{
+            display: flex;
+            gap: 24px;
+            @include tab(){
+            overflow-x: scroll;
+            padding-bottom: 24px;
+            }
+            .fund-cards-box{
+                border: 1px solid #DEDCDD;
+                border-radius: 24px;
+                max-width: 410px;
+                width: 100%;
+                
+                .top-components{
+                    background: #19417A;
+                    color: white;
+                    padding: 24px;
+                    border-top-left-radius: 22px;
+                    border-top-right-radius: 22px;
+                    
+                    h3{
+                        font-size: 28px;
+                        line-height: 30.2px;
+                        font-family: 'Gotham Pro';
+                        font-weight: 400;
+                        padding-bottom: 16px;
+
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 22.2px;
+                        font-family: 'Gotham Pro';
+                        font-weight: 400;
+                    }
+                
+
+                }
+                .middle-componets{
+                    padding: 16px 24px;
+
+                    p{
+                        font-size: 14px;
+                        line-height: 16.2px;
+                        font-family: 'Gotham Pro';
+                        font-weight: 400;
+                         color: #221F20;
+                         
+
+                    }
+                }
+                .lower-componets{
+                    padding: 16px 24px;
+                    border-top: 1px solid #DEDCDD;
+                    .lower-pragraph{
+                        display: flex;
+                        justify-content: space-between;
+
+                        p{
+                            font-size: 14px;
+                            line-height: 22.24px;
+                            font-family: 'Gotham Pro';
+                            font-weight: 400;
+                            color: #615D5F;
+                            padding-bottom: 16px;
+
+                        }
+                        .side-pra{
+                            font-size: 14px;
+                            line-height: 16.24px;
+                            font-family: 'Gotham Pro';
+                            font-weight: 400;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

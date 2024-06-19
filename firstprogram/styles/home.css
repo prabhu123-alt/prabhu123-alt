@@ -1,0 +1,1427 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.category-page {
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+
+.slick-next:before {
+    color: black !important;
+}
+
+.slick-prev:before {
+    color: black !important;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../assets/fonts/GothamPro-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../assets/fonts/GothamPro-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../assets/fonts/GothamPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../assets/fonts/GothamPro-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../assets/fonts/GothamPro-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* .nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+.nav-bar li {
+    float: left;
+}
+
+.nav-bar li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar li a.hover {
+    background-color: #ddd;
+}
+
+.active {
+    color: white;
+    background-color: #F26E10;
+} */
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0 24px; */
+}
+.comp-img{
+    width: 100%;
+}
+
+.first-comp {
+    display: flex;
+    padding: 16px 0px 16px 0px;
+}
+
+.pragraph-comp2 p {
+    font-family: 'Gotham Pro';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.comp-heading {
+    font-family: 'Gotham Pro';
+    font-size: 46px;
+    line-height: 53.6px;
+    gap: 16px;
+}
+
+.pragraph-comp {
+    font-family: 'Gotham Pro';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    padding-top: 16px;
+}
+
+.link-comp {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.link-comp a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 35px;
+    font-family: 'Gotham Pro';
+    display: flex;
+}
+
+.link-comp a::before {
+    content: url(../assets/image/Frame\ 48097047s.png);
+    margin: 5px;
+}
+
+.link-comp1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-comp2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-comp {
+    padding: 56px 0px;
+}
+
+.btn-comp a {
+    text-decoration: none;
+    padding: 20px 80px;
+    border-radius: 100px;
+    background: rgba(25, 65, 122, 1);
+    color: white;
+    font-family: 'Gotham Pro';
+
+}
+
+.first-part-comp {
+    max-width: 520px;
+    width: 100%;
+}
+
+.container-57326415d5 {
+    /* width: 100%; */
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comp-img img {
+    max-width: 760px;
+    width: 100%;
+}
+
+.container-57326415d5 h1 {
+    font-weight: 500;
+    font-family: 'Gotham Pro';
+    font-size: 32px;
+    line-height: 34.56px;
+
+}
+
+.cards-contn {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.cards-cont1 {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+}
+
+.cards-cont2 {
+    gap: 24px;
+    display: flex;
+
+}
+
+.insurance {
+    width: 1281px;
+    height: 35px;
+    gap: 0px;
+    opacity: 0px;
+    margin-left: 50px;
+}
+
+.cards {
+    /* width: 32%; */
+    max-width: 409px;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border: 1px solid rgba(222, 220, 221, 1);
+    align-self: stretch;
+    height: auto;
+}
+
+.boxes img {
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+    padding: 10px;
+
+}
+
+.card-heading {
+    font-family: 'Gotham Pro';
+    font-size: 24px;
+    line-height: 24.56px;
+    font-weight: 500;
+
+}
+
+.card-pra {
+    font-family: 'Gotham Pro';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    /* letter-spacing: -0.2px; */
+    /* text-align: left; */
+    color: rgb(77, 75, 76);
+    letter-spacing: -0.2px;
+}
+
+/* .cards {
+    max-width: 409px;
+    border: 1px solid black;
+} */
+
+.header h1 {
+    color: black;
+    margin-left: 30px;
+}
+
+.policy {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    margin-top: 50px;
+    /* padding: 20px; */
+    border-radius: 20px;
+    background-color: #F1F3FC;
+    /* padding: 40px 0px 40px 0px; */
+    padding: 40px 0px 40px 0px;
+    margin-bottom: 40px;
+}
+
+.services h1 {
+    color: black;
+    font-family: 'Gotham Pro';
+    width: 400px;
+    padding: 40px;
+    size: 32px;
+}
+
+.list-elements ul {
+    padding-left: 15px;
+}
+
+.frame {
+    background-color: #F1F3FC;
+    margin: 40px;
+}
+
+.frame h3 {
+    font-family: 'Gotham Pro';
+    font-size: 32px;
+    line-height: 32.56px;
+    font-weight: 500;
+}
+
+.wrk-list ul li {
+    list-style-type: none;
+    font-size: 14px;
+    position: relative;
+    font-family: 'Gotham Pro';
+    line-height: 40.1px;
+    font-weight: 400;
+    right: -20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.wrk-list ul li::before {
+    content: url(../assets/image/Frame\ 48097047s.png);
+    position: absolute;
+    margin-left: -25px;
+    width: 24px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -29px;
+
+}
+
+.tax-pra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrk-list {
+    padding: 40px 0px 40px 0px;
+}
+
+.container1 {
+    /* width: 100%;
+    background-color: #FFD0AF; */
+    height: 100%;
+    /* margin-top: 20px; */
+}
+
+.img-sec img {
+    width: 100%;
+
+}
+
+.cmp-title h2 {
+    font-family: 'Gotham Pro';
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 34.56px;
+    text-align: left;
+    color: black;
+    padding: 30px;
+
+}
+
+.cmp-teaser {
+    padding: 32px;
+    margin: 8px;
+    border-radius: 20px;
+    background: #FFEFE4;
+}
+
+.cmp-image {
+    width: 40px;
+    height: 40px;
+    background: #F26E10;
+
+}
+
+.cmp-teaser p {
+    font-family: 'Gotham Pro';
+    font-size: 14px;
+    line-height: 19.4px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+}
+
+.cmp-teaser h5 {
+    font-family: 'Gotham Pro';
+    /* size: 20px; */
+    line-height: 23.1px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-cmp {
+    display: flex;
+    width: 100%;
+    padding: 32px;
+    justify-content: space-between;
+}
+
+.fetures-insurance {
+    min-height: 692px;
+    display: flex;
+    gap: 26px;
+}
+
+.fetures-title h6 {
+    font-family: 'Gotham Pro';
+    font-weight: 500px;
+    font-size: 42px;
+    line-height: 55.65px;
+    padding-top: 190px;
+}
+
+.fetures-title p {
+    font-family: 'Gotham Pro';
+    font-size: 16px;
+    line-height: 25.5px;
+}
+
+.fetures-title {
+    width: 100%;
+}
+
+.fetures-aside {
+
+    position: relative;
+    max-width: 735px;
+    width: 100%;
+    text-align: right;
+}
+
+.features-pragraph p {
+    font-size: 22px;
+    gap: 2pc;
+    line-height: 32px;
+    padding: 15px;
+    background: #FFFFFF;
+    gap: 12px;
+    margin: 20px;
+    border-radius: 40px;
+}
+
+.features-pragraph {
+    position: absolute;
+    right: 112px;
+}
+
+.shape-container {
+    position: relative;
+    width: 100%;
+    max-width: 737px;
+    padding-top: 40px;
+    /* background-image: url("../assets/image/Rectangle 39793.png"); */
+}
+
+.shape {
+    position: absolute;
+    right: 0px;
+    max-width: 512px;
+    width: 100%;
+}
+
+.shape-img-list {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+
+}
+
+.content {
+    background: #fff;
+    font-family: 'Gotham Pro';
+    font-weight: 400;
+    padding: 24px 32px 24px 32px;
+    width: max-content;
+    border-radius: 90px;
+    letter-spacing: -.02em;
+    margin: 10px;
+    z-index: 1;
+    align-items: self-end;
+}
+
+.tax-content {
+    padding: 56px 0px 56px 0px;
+    width: 100%;
+    gap: 26px;
+    background: #FFFFFF;
+}
+
+.tax-title h3 {
+    font-family: 'Gotham Pro';
+    font-size: 34px;
+    line-height: 36.1px;
+    font-weight: 500;
+    color: #221F20;
+
+}
+
+.tax-pragraph {
+    font-family: 'Gotham Pro';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.3px;
+    gap: 10px;
+    line-height: 22px;
+
+}
+
+.tax-cards {
+    width: 100%;
+    padding: 40px;
+    border: 1px solid #DEDCDD;
+    border-radius: 25px;
+
+
+
+}
+
+.tax-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.tax-image {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.tax-cards h5 {
+    font-family: 'Gotham Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25.92px;
+    text-align: left;
+
+}
+
+.tax-cards p {
+    font-family: 'Gotham Pro';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: -0.2px;
+    text-align: left;
+
+}
+
+.plans-44 {
+    min-height: 750px;
+    gap: 24px;
+
+
+}
+
+.plans-44 h3 {
+    font-family: 'Gotham Pro';
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 34.1px;
+    margin-bottom: 20px;
+}
+
+.all-taxelements {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightblue;
+    gap: 127px;
+    padding: 24px 0px 24px 0px;
+
+}
+
+.plan-pragraph {
+    max-width: 311px;
+    width: 100%;
+}
+
+.content-plan {
+    width: 50%;
+}
+
+
+.plan-btn {
+    padding: 8px 16px 8px 16px;
+    gap: 12px;
+    border-radius: 15px;
+    background: #66A9E433;
+    border: none;
+    font-family: 'Gotham Pro';
+
+}
+
+.plan-texts1 h6 {
+    font-family: 'Gotham Pro';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24.91px;
+    padding: 8px 0px 16px 0px;
+}
+
+.plan-texts1 p {
+    font-family: 'Gotham Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.plan-texts li {
+    list-style-type: none;
+    font-family: 'Gotham Pro';
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    padding: 10px;
+
+}
+
+.plan-texts li::before {
+    content: url(../assets/image/Frame\ 48097047s.png);
+    position: absolute;
+    margin-left: -25px;
+    width: 24px;
+    height: 20px;
+
+}
+
+.trm-insu {
+    width: 100%;
+    background-color: #FFD0AF;
+}
+
+.fetures-container {
+    width: 100%;
+    background: #FFEFE4;
+}
+
+.paln-container {
+    padding: 40px 0px 40px 0px;
+    width: 100%;
+    background: #FFEFE4;
+}
+
+.all-btn {
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.all-taxelements img {
+    max-width: 315px;
+    min-height: 235px;
+    width: 100%;
+
+}
+
+.plan-texts {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.btn-plan {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.plan-texts1 {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-plan1 {
+    color: white;
+    background: rgba(25, 65, 122, 1);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Gotham Pro';
+    border-radius: 100px;
+    padding: 10px 20px;
+    text-decoration: none;
+
+}
+
+.btn-plan2 {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Gotham Pro';
+    border-radius: 100px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid lightblue;
+}
+
+.first-life {
+    padding: 32px 0px 32px 0px;
+    min-height: 280px;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+
+}
+
+.first-life-pragraph h2 {
+    font-family: 'Gotham Pro';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32.1px;
+
+}
+
+.first-life-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0px 32px 0px;
+    align-items: center;
+}
+
+.first-life-btn span {
+    font-family: Gotham Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+.first-life-btn img {
+    width: 34px;
+    height: 34px;
+
+}
+
+.first-cards {
+    background: rgba(237, 244, 253, 1);
+    border-radius: 24px;
+    display: flex;
+    gap: 16pxpx;
+    padding: 49px 91px 63px 16px;
+
+}
+
+.first-life-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+
+}
+
+.first-cards h4 {
+    font-family: 'Gotham Pro';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.first-cards p {
+    font-family: 'Gotham Pro';
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.btn-know {
+    padding: 32px 0px 32px 0px;
+}
+
+
+.knowledge-center {
+    background: rgba(255, 255, 255, 1);
+
+}
+
+.knowledge-title h3 {
+    font-family: 'Gotham Pro';
+    line-height: 32.5px;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.knowledge-image img {
+    border-radius: 24px;
+    width: 100%;
+}
+
+.bttn1 {
+    border-radius: 45px;
+    padding: 8px 16px 8px 16px;
+    background: rgba(237, 244, 253, 1);
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Gotham Pro';
+    color: black;
+
+}
+
+.bttn1:hover {
+    color: white;
+    background: #F26E10;
+}
+
+.knowledge-image {
+    margin-bottom: 20px;
+}
+
+.other-elemets h5 {
+    font-family: 'Gotham Pro';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 34.56px;
+    padding-top: 10px;
+
+}
+
+.other-elemets p {
+    font-family: 'Gotham Pro';
+    font-weight: 400;
+    color: rgba(117, 113, 114, 1);
+    padding: 16px 0px 16px 0px;
+
+}
+
+.other-elemets h6 {
+    line-height: 30.2px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Gotham Pro';
+    margin-bottom: 10px;
+}
+
+.bttn2 {
+    border-radius: 45px;
+    padding: 8px 16px 8px 16px;
+    background: rgba(237, 244, 253, 1);
+    text-decoration: none;
+    color: blue;
+
+
+}
+
+.bttn2:hover {
+    color: white;
+    background: #F26E10;
+}
+
+.knowledge-boxes {
+    display: flex;
+    gap: 18px;
+    justify-content: space-between;
+
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.searched-topic {
+    padding: 56px 0px 56px 0px;
+    min-height: 380px;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.searched-topic-title h2 {
+    font-family: 'Gotham pro';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 34.25px;
+}
+
+.insurance-list {
+    padding: 11px 17px 11px 17px;
+    background: rgba(241, 243, 252, 1);
+    border-radius: 45px;
+}
+
+.searched-topic-title {
+    margin-bottom: 30px;
+}
+
+.insurance-list a {
+    font-size: 16px;
+    font-family: 'Gotham pro';
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+
+
+.all-insurance {
+    display: flex;
+    align-items: center;
+    gap: 24px 16px;
+    flex-wrap: wrap;
+
+}
+
+.first-life-btn {
+    display: flex;
+    align-items: center;
+}
+
+
+/* .customers-care {
+    background: rgba(255, 255, 255, 1);
+} */
+
+.customers-numbers {
+    padding: 20px 16px 20px 16px;
+    border: 0.4px solid rgba(179, 176, 177, 1);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+
+}
+
+.customers-care {
+    display: flex;
+    gap: 16px;
+    background: rgba(255, 255, 255, 1);
+    flex-wrap: wrap;
+    padding: 24px 0px 24px 0px;
+}
+
+.customers-contact p {
+    font-family: 'Gotham pro';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.1px;
+}
+
+.customers-contact h4 {
+    font-family: 'Gotham pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+
+.footer-elements {
+    background: rgba(25, 65, 122, 1);
+    padding: 80px 0px 80px 0px;
+    /* padding: 80px; */
+
+}
+
+.footer-saving {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.footer-title h3 {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Gotham pro';
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    gap: 4px;
+
+}
+
+.footer-pragraph li {
+    font-family: 'Gotham pro';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color: rgba(255, 255, 255, 1);
+    list-style-type: none;
+    padding: 2px 0px 2px 0px;
+    gap: 4px;
+}
+
+
+
+.footer-saving2 {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.footer-social-media {
+    background: rgba(237, 244, 253, 1);
+    padding: 24px 0px 24px 0px;
+}
+
+.others-footer {
+    min-height: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-part-others-footer {
+    max-width: 519px;
+}
+
+.first-part-others-footer p {
+    font-family: 'Gotham pro';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.3px;
+}
+
+.secound-part-others-footer p {
+    padding: 9px 89px 14px 5px;
+}
+
+.secound-part-others-footer a {
+    text-decoration: none;
+    height: 32px;
+    width: 32px;
+    font-size: 25px;
+}
+
+
+.register-office {
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 32px 0px 32px 0px;
+
+
+}
+
+.register-office-last {
+    max-width: 681px;
+    width: 100%;
+}
+
+.register-office-first {
+    max-width: 480px;
+    min-height: 68px;
+}
+
+.register-office-first h3 {
+    font-family: 'Gotham pro';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.register-office-last h3 {
+    font-family: 'Gotham pro';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.register-office-first p {
+    font-family: 'Gotham Pro';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+
+}
+
+.register-office-last p {
+    font-family: 'Gotham Pro';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+
+}
+
+.Disclaimers {
+    width: 100%;
+    background: rgba(242, 110, 16, 1);
+    padding: 24px 0px 24px 0px;
+}
+
+.Disclaimers-LIC {
+    min-height: 68px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Disclaimers-list a {
+    text-decoration: none;
+    gap: 24px;
+    ;
+    font-family: 'Gotham Pro';
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1);
+    margin: 10px;
+}
+
+.Disclaimers-title p {
+    font-family: 'Gotham Pro';
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.others-footer {
+    width: 100%;
+}
+
+.first-part-others-footer {
+    border-right: 1px solid black;
+}
+
+.slick-dotted.slick-slider {
+    margin: auto !important;
+}
+
+
+/* media-query-start */
+
+@media only screen and (max-width: 1160px) {
+    .container {
+        padding: 0 24px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 767px) {
+
+    .container {
+        padding: 24px 16px 24px 16px;
+    }
+
+
+    .container-57326415d5 h1 {
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    .comp-heading {
+        font-size: 28px;
+        line-height: 30.24px;
+    }
+
+    .pragraph-comp {
+        font-size: 14px;
+        line-height: 20.2px;
+    }
+
+    .link-comp a {
+        font-size: 14px;
+    }
+
+    .wrk-list ul li {
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 16px;
+    }
+
+    .img-sec {
+        display: none;
+    }
+
+    .cmp-title h2 {
+        line-height: 25px;
+        font-size: 24px;
+    }
+
+    .cmp-teaser {
+        padding: 16px;
+    }
+
+    .cmp-teaser h5 {
+        font-size: 16px;
+    }
+
+    .fetures-title h6 {
+        font-size: 24px;
+        line-height: 25px;
+        padding: inherit;
+    }
+
+    .fetures-title p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+
+    .tax-pra {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 0px 16px 0px;
+    }
+
+    .cards {
+        max-width: initial;
+        width: 100%;
+        padding: 24px 16px 24px 16px;
+    }
+
+    .tax-cards {
+        padding: 16px 24px 16px 24px;
+    }
+
+    .frame h3 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .plans-44 h3 {
+        display: none;
+    }
+
+
+    .cards-cont1 {
+        flex-wrap: wrap;
+    }
+
+    .cards-cont2 {
+        flex-wrap: wrap;
+    }
+
+    .cards-contn {
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    .policy {
+        flex-direction: column;
+    }
+
+    .first-life-cards {
+        flex-wrap: wrap;
+    }
+
+    .all-taxelements {
+        flex-wrap: wrap;
+        gap: 0px;
+        border: none;
+    }
+
+    .tax-boxes {
+        flex-wrap: wrap;
+    }
+
+    .fetures-insurance {
+        flex-direction: column;
+    }
+
+    .plan-texts1 h6 {
+        font-size: 20px;
+        line-height: 21px;
+    }
+
+    .plan-texts1 p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .card-cmp {
+        flex-direction: column;
+    }
+
+    .knowledge-boxes {
+        flex-wrap: wrap;
+
+    }
+
+    .shape {
+        min-height: 435px;
+    }
+
+    .content {
+        padding: 16px 24px 16px 24px;
+        font-size: 14px;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    .length {
+        height: 58px;
+
+    }
+
+    .lenght2 {
+        height: 65px;
+    }
+
+    .lenght3 {
+        display: none;
+    }
+
+    .tax-title h3 {
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    .tax-pragraph {
+        font-size: 14px;
+        line-height: 20.1px;
+    }
+
+    .others-footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .first-cards {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan-texts {
+        flex-wrap: wrap;
+    }
+
+
+    .customers-numbers {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 373px;
+    }
+
+    .customers-numbers p {
+        line-height: 14px;
+        font-size: 14px;
+    }
+
+    .link-comp {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-life-pragraph h2 {
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    .first-life-btn {
+        display: none;
+    }
+
+    .comp-imge {
+        display: none;
+    }
+
+    .btn-comp {
+        padding-top: 24px;
+    }
+
+    .btn-comp a {
+        padding: 10px 100px;
+
+
+    }
+
+    .plan-texts1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan-texts li {
+        line-height: 20px;
+    }
+
+    .btn-plan {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .first-cards h4 {
+        font-size: 20px;
+        line-height: 21px;
+    }
+
+    .knowledge-title h3 {
+        font-size: 24px;
+        line-height: 21px;
+    }
+
+    .btn-know {
+        display: none;
+    }
+
+    .other-elemets h5 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .other-elemets p {
+        display: none;
+    }
+
+    .searched-topic-title h2 {
+        font-size: 24px;
+        font-weight: 24px;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .footer-pragraph li {
+        font-size: 14px;
+        padding: 2px 0px 2px 0px;
+        line-height: 19px;
+    }
+    .first-part-others-footer{
+        border: none;
+        border-bottom: 1px solid lightseagreen;
+    }
+    .Disclaimers-LIC{
+        display: flex;
+        flex-direction: column;
+    }
+    .comp-img{
+        display: none;
+    }
+}

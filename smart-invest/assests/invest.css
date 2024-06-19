@@ -1,0 +1,995 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("./fonts/GothamPro-Light.woff2 format") "woff2";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("./fonts/GothamPro-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("./fonts/GothamPro-Medium.woff2 format") "woff2";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("./fonts/GothamPro-Bold.woff2") "woff2";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("./fonts/GothamPro-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+.smart-invest {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .smart-invest {
+    padding: 0px 16px;
+  }
+}
+.smart-invest .container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+.smart-invest .Rediance-invest {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 40px;
+}
+@media (max-width: 767px) {
+  .smart-invest .Rediance-invest {
+    padding: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .smart-invest .Rediance-invest {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.smart-invest .Rediance-invest .rediance-elements {
+  width: 100%;
+}
+.smart-invest .Rediance-invest .rediance-elements .btn-red {
+  padding: 8px 16px 8px 16px;
+  border-radius: 16px;
+  background-color: #FFEFE4;
+  color: #AA3800;
+  text-decoration: none;
+  font-family: "Gotham Pro";
+  font-size: 14px;
+  line-height: 22.4px;
+  font-weight: 700;
+}
+.smart-invest .Rediance-invest .rediance-elements h1 {
+  font-size: 28px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  line-height: 30.4px;
+  padding-top: 24px;
+}
+.smart-invest .Rediance-invest .rediance-elements p {
+  font-size: 16px;
+  line-height: 25px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  padding-top: 16px;
+}
+.smart-invest .Rediance-invest .rediance-elements .btn-before {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+@media (max-width: 767px) {
+  .smart-invest .Rediance-invest .rediance-elements .btn-before {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.smart-invest .Rediance-invest .rediance-elements .btn-before .btn-before-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.smart-invest .Rediance-invest .rediance-elements .btn-before .btn-before-side a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Gotham Pro";
+  color: #221F20;
+  font-weight: 400;
+  position: relative;
+  padding-left: 22px;
+}
+.smart-invest .Rediance-invest .rediance-elements .btn-before .btn-before-side a::before {
+  content: url(./images/currect-symbol.png);
+  position: absolute;
+  top: 0px;
+  left: -9px;
+  /* right: 2px; */
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+.smart-invest .Rediance-invest .rediance-elements .button-click {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 5;
+  gap: 16px;
+  padding-top: 20px;
+}
+@media (max-width: 767px) {
+  .smart-invest .Rediance-invest .rediance-elements .button-click {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.smart-invest .Rediance-invest .rediance-elements .button-click .btn-blue1 {
+  padding: 0px 24px 0px 24px;
+  background: #19417A;
+  border-radius: 100px;
+  border-radius: 100;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.smart-invest .Rediance-invest .rediance-elements .button-click .btn-blue1 .btn-blue {
+  font-size: 16px;
+  color: white;
+  font-family: "Gotham Pro";
+  line-height: 18.56px;
+  font-weight: 400;
+}
+.smart-invest .Rediance-invest .rediance-elements .button-click .btn-white1 {
+  padding: 0px 24px 0px 24px;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.4px solid #757172;
+  border-radius: 100px;
+}
+.smart-invest .Rediance-invest .rediance-elements .button-click .btn-white1 .btn-white {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  color: #1C2945;
+}
+.smart-invest .Rediance-invest .readiance-imge-elements {
+  max-width: 737px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+.smart-invest .Rediance-invest .readiance-imge-elements .readiance-imge {
+  width: 100%;
+}
+.smart-invest .Rediance-invest .readiance-imge-elements .readiance-imge .picture-tag {
+  display: flex;
+  justify-content: flex-end;
+}
+.smart-invest .Rediance-invest .readiance-imge-elements .readiance-imge .picture-tag img {
+  width: 93%;
+}
+@media (max-width: 767px) {
+  .smart-invest .Rediance-invest .readiance-imge-elements .readiance-imge .picture-tag img {
+    width: 100%;
+  }
+}
+.smart-invest .Rediance-invest .readiance-imge-elements .all-elements {
+  background: url(./images/bg-image.png);
+  align-items: center;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 98% 100%;
+  display: grid;
+  justify-content: center;
+  padding: 40px 81pt 40px 10pc;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .smart-invest .Rediance-invest .readiance-imge-elements .all-elements {
+    background: #edf4fd;
+    border-radius: 0 0 24px 3pc;
+    grid-template-columns: 100%;
+    padding: 2pc 2pc 3pc;
+  }
+}
+.smart-invest .Rediance-invest .readiance-imge-elements .all-elements .rediance-btomm-elments {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  position: relative;
+  top: -12px;
+}
+.smart-invest .Rediance-invest .readiance-imge-elements .all-elements .rediance-btomm-elments .arrow-left {
+  position: absolute;
+  left: -60px;
+  top: 77px;
+}
+@media (max-width: 767px) {
+  .smart-invest .Rediance-invest .readiance-imge-elements .all-elements .rediance-btomm-elments .arrow-left {
+    display: none;
+  }
+}
+.smart-invest .Rediance-invest .readiance-imge-elements .all-elements .rediance-btomm-elments .arrow-left img {
+  padding: 8px;
+  background: #C7E0F8;
+  border-radius: 100px;
+}
+.smart-invest .Rediance-invest .readiance-imge-elements .all-elements .arrow-right {
+  position: absolute;
+  right: -60px;
+  top: 77px;
+}
+@media (max-width: 767px) {
+  .smart-invest .Rediance-invest .readiance-imge-elements .all-elements .arrow-right {
+    display: none;
+  }
+}
+.smart-invest .Rediance-invest .readiance-imge-elements .all-elements .arrow-right img {
+  padding: 8px;
+  background: #C7E0F8;
+  border-radius: 100px;
+}
+.smart-invest .Rediance-invest h2 {
+  font-size: 32px;
+  font-family: "Gotham Pro";
+  line-height: 34.56px;
+  font-weight: 500;
+}
+.smart-invest .Rediance-invest h6 {
+  font-family: Gotham Pro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.24px;
+  letter-spacing: -0.200000003px;
+  text-align: left;
+  padding-top: 8px;
+}
+.smart-invest .Rediance-invest p {
+  font-family: Gotham Pro;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13.92px;
+  text-align: left;
+  padding-top: 24px;
+}
+.smart-invest .Rediance-invest .all-btn {
+  display: flex;
+  gap: 16px;
+  padding: 8px 0px;
+  border-bottom: 0.4px solid #DEDCDD;
+}
+.smart-invest .Rediance-invest .all-btn .btn-buy {
+  display: flex;
+  padding: 0px 24px 0px 24px;
+  background: #19417A;
+  border-radius: 100px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .smart-invest .Rediance-invest .all-btn .btn-buy {
+    width: 100%;
+  }
+}
+.smart-invest .Rediance-invest .all-btn .btn-buy a {
+  font-family: "Gotham Pro";
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  line-height: 16.24px;
+}
+.smart-invest .Rediance-invest .all-btn .btn-leran {
+  padding: 0px 24px 0px 24px;
+  border: 0.4px solid #757172;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .smart-invest .Rediance-invest .all-btn .btn-leran {
+    width: 100%;
+  }
+}
+.smart-invest .Rediance-invest .all-btn .btn-leran a {
+  font-size: 14px;
+  font-family: "Gotham Pro";
+  color: darkblue;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 16.24px;
+}
+.smart-invest .key-fetures {
+  padding: 16px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 767px) {
+  .smart-invest .key-fetures {
+    padding: 16px 0px;
+  }
+}
+.smart-invest .key-fetures .list-fetures {
+  padding: 16px;
+  background: #EDF4FD;
+  border-radius: 32px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .smart-invest .key-fetures .list-fetures {
+    overflow: scroll;
+  }
+}
+.smart-invest .key-fetures .list-fetures .btn-before {
+  padding: 6px 12px 6px 12px;
+  background: #C7E0F8;
+  display: flex;
+  align-items: center;
+  animation: 40px;
+  border-radius: 40px;
+  justify-content: center;
+}
+.smart-invest .key-fetures .list-fetures .btn-before::before {
+  content: url(./images/lessthan.png);
+}
+.smart-invest .key-fetures .list-fetures a {
+  text-decoration: none;
+  color: #1C2945;
+  font-size: 14px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  line-height: 19px;
+}
+@media (max-width: 767px) {
+  .smart-invest .key-fetures .list-fetures a {
+    min-width: -moz-max-content;
+    min-width: max-content;
+    align-items: center;
+    display: flex;
+  }
+}
+.smart-invest .key-fetures .key-fetures-prat-two h3 {
+  font-size: 32px;
+  line-height: 34.2px;
+  font-weight: 500;
+  font-family: "Gotham Pro";
+}
+.smart-invest .key-fetures .key-fetures-prat-two .cards-key {
+  display: flex;
+  gap: 24px;
+  padding-top: 24px;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .smart-invest .key-fetures .key-fetures-prat-two .cards-key {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+.smart-invest .key-fetures .key-fetures-prat-two .cards-key .cards-box {
+  padding: 32px;
+  border: 0.4px solid #B3B0B1;
+  border-radius: 24px;
+  max-width: 302px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .smart-invest .key-fetures .key-fetures-prat-two .cards-key .cards-box {
+    padding: 16px;
+    max-width: 167px;
+  }
+}
+.smart-invest .key-fetures .key-fetures-prat-two .cards-key .cards-box h4 {
+  font-size: 20px;
+  line-height: 23px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .smart-invest .key-fetures .key-fetures-prat-two .cards-key .cards-box h4 {
+    font-size: 16px;
+  }
+}
+.smart-invest .key-fetures .key-fetures-prat-two .cards-key .cards-box p {
+  font-family: "Gotham Pro";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  letter-spacing: -0.200000003px;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .smart-invest .key-fetures .key-fetures-prat-two .cards-key .cards-box p {
+    line-height: 16px;
+    font-size: 12px;
+  }
+}
+.smart-invest .plan-option {
+  background: #EDF4FD;
+}
+.smart-invest .plan-option .all-paln {
+  padding: 48px 40px;
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 1024px) {
+  .smart-invest .plan-option .all-paln {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.smart-invest .plan-option .all-paln .plain-img img {
+  width: 100%;
+  max-width: 715px;
+}
+.smart-invest .plan-option .all-paln .plan-famliy-care h2 {
+  font-family: Gotham Pro;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 34.56px;
+  text-align: left;
+  padding-bottom: 24px;
+}
+.smart-invest .plan-option .all-paln .plan-famliy-care h3 {
+  background: #FFEFE4;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: "Gotham Pro";
+  padding: 17px 24px 16px 24px;
+  border-radius: 8px 8px 1px 1px;
+  width: 144px;
+  color: black;
+}
+.smart-invest .plan-option .all-paln .plan-famliy-care .Family-Care .family-pragarpah {
+  font-family: Gotham Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  letter-spacing: -0.3000000119px;
+  text-align: left;
+}
+.smart-invest .plan-option .all-paln .plan-famliy-care .Family-Care .faq-section {
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+.smart-invest .plan-option .all-paln .plan-famliy-care .Family-Care .faq-section .tabs {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  flex-shrink: 0;
+  padding-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .smart-invest .plan-option .all-paln .plan-famliy-care .Family-Care .faq-section .tabs {
+    font-size: 12px;
+  }
+}
+.smart-invest .plan-option .all-paln .plan-famliy-care .Family-Care .faq-section .tabs .activeTab {
+  border-bottom: 4px solid #f26e10;
+  font-weight: 600;
+  background: #FFEFE4;
+  padding: 17px 24px 17px 24px;
+  height: 52px;
+}
+.smart-invest .plan-option .all-paln .plan-famliy-care .Family-Care .faq-section .tabs .tablinks {
+  padding: 17px 24px 17px 24px;
+}
+.smart-invest .plan-option .all-paln .plan-famliy-care .Family-Care .family-pra p {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 24px;
+  font-family: Gotham Pro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.72px;
+  text-align: left;
+  position: relative;
+  left: 30px;
+}
+.smart-invest .plan-option .all-paln .plan-famliy-care .Family-Care .family-pra p::before {
+  content: url(./images/currect-symbol.png);
+  position: absolute;
+  left: -34px;
+}
+.smart-invest .Sample-Illustration {
+  background: #FFFFFF;
+  padding: 16px 0px;
+}
+.smart-invest .Sample-Illustration .redaince-smart {
+  padding: 32px 0px;
+}
+.smart-invest .Sample-Illustration .redaince-smart .sample-pra-heading p {
+  font-size: 16px;
+  line-height: 25px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+}
+.smart-invest .Sample-Illustration .redaince-smart .sample-pra-heading h2 {
+  font-size: 32px;
+  line-height: 34.2px;
+  font-weight: 500;
+  font-family: "Gotham Pro";
+  padding-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .smart-invest .Sample-Illustration .redaince-smart .sample-pra-heading h2 {
+    font-size: 24px;
+    list-style: 24px;
+  }
+}
+.smart-invest .Sample-Illustration .redaince-smart .table-form {
+  border: 2px solid #19417A;
+  border-radius: 24px;
+}
+@media (max-width: 1024px) {
+  .smart-invest .Sample-Illustration .redaince-smart .table-form {
+    overflow: scroll;
+  }
+}
+.smart-invest .Sample-Illustration .redaince-smart .table-form table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.smart-invest .Sample-Illustration .redaince-smart .table-form table tr:first-child th:first-child {
+  border-top-left-radius: 22px;
+}
+.smart-invest .Sample-Illustration .redaince-smart .table-form table th:last-child {
+  border-top-right-radius: 22px;
+}
+.smart-invest .Sample-Illustration .redaince-smart .table-form table th {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  padding: 8px 24px 8px 24px;
+  max-width: 210px;
+  background: #19417A;
+  color: white;
+}
+.smart-invest .Sample-Illustration .redaince-smart .table-form table th span {
+  font-size: 16px;
+}
+.smart-invest .Sample-Illustration .redaince-smart .table-form table td {
+  border-top: 1px solid #19417A;
+  padding: 16px 24px 16px 24px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gotham Pro";
+  text-align: center;
+  color: #221F20;
+}
+.smart-invest .Sample-Illustration .redaince-smart .table-form table td:last-child {
+  opacity: 63%;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan {
+  padding: 16px 0px;
+}
+@media (max-width: 1024px) {
+  .smart-invest .Sample-Illustration .Visualize-your-plan {
+    overflow-x: scroll;
+  }
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan h2 {
+  font-size: 32px;
+  font-family: "Gotham Pro";
+  line-height: 34.2px;
+  font-weight: 400;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-imges {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .tabing {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding-top: 32px;
+  cursor: pointer;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .tabing .activeTabs {
+  font-family: "Gotham Pro";
+  font-size: 18px;
+  color: #F26E10;
+  line-height: 24px;
+  border-bottom: 2px solid #f26E10;
+  font-weight: 400;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .tabing .tablinked {
+  font-family: "Gotham Pro";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards {
+  top: 461px;
+  left: 24px;
+  display: flex;
+  gap: 16px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-first {
+  padding: 16px;
+  background: #FFEFE4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-first img {
+  width: 40px;
+  height: 40px;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-first h3 {
+  font-size: 20px;
+  line-height: 23px;
+  color: #221F20;
+  font-family: "Gotham Pro";
+  font-weight: 500;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-first p {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  font-family: "Gotham Pro";
+  color: #AA3800;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-secound {
+  padding: 16px;
+  background: #FFD0AF;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-secound img {
+  width: 40px;
+  height: 40px;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-secound h3 {
+  font-size: 20px;
+  line-height: 23px;
+  color: #221F20;
+  font-family: "Gotham Pro";
+  font-weight: 500;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-secound p {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  font-family: "Gotham Pro";
+  color: #AA3800;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-third {
+  padding: 16px;
+  background: #FFB17E;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-third img {
+  width: 40px;
+  height: 40px;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-third h3 {
+  font-size: 20px;
+  line-height: 23px;
+  color: #221F20;
+  font-family: "Gotham Pro";
+  font-weight: 500;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-third p {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  font-family: "Gotham Pro";
+  color: #AA3800;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-fourth {
+  padding: 16px;
+  background: #C64A00;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-fourth img {
+  width: 40px;
+  height: 40px;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-fourth h3 {
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
+  font-family: "Gotham Pro";
+  font-weight: 500;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-fourth p {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  font-family: "Gotham Pro";
+  color: whitesmoke;
+}
+.smart-invest .Sample-Illustration .Visualize-your-plan .all-visualize-cards .cards-fourth p span {
+  color: white;
+}
+.smart-invest .Eligibility-Criteria h2 {
+  font-size: 32px;
+  line-height: 34.56px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+.smart-invest .Eligibility-Criteria .all-content {
+  display: flex;
+}
+.smart-invest .Eligibility-Criteria .all-content .tab-six {
+  max-width: 412px;
+  width: 100%;
+}
+.smart-invest .Eligibility-Criteria .all-content .tab-six .tablinkcrad {
+  padding: 24px 40px 24px 40px;
+  font-family: "Gotham Pro";
+  font-size: 20px;
+  line-height: 32.5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.smart-invest .Eligibility-Criteria .all-content .tab-six .activTabn {
+  border-left: 4px solid #F26E10;
+}
+.smart-invest .Eligibility-Criteria .all-content .all-tab {
+  width: 100%;
+}
+.smart-invest .Eligibility-Criteria .all-content .all-tab .section-panels {
+  margin-bottom: 40px;
+  border-bottom: 2px solid #DEDCDD;
+  padding: 0px 0px 24px 0px;
+}
+.smart-invest .Eligibility-Criteria .all-content .all-tab .accordian-part {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gotham Pro";
+  font-weight: 500;
+  color: #19417A;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 16px 0px 16px 0px;
+  margin-bottom: 16px;
+  transition: 0.4s;
+}
+.smart-invest .Eligibility-Criteria .all-content .all-tab .accordian-part::after {
+  content: "+";
+  font-size: 25px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  float: right;
+  margin-left: 5px;
+}
+.smart-invest .Eligibility-Criteria .all-content .all-tab .accordian-part.activet::after {
+  content: "-";
+}
+.smart-invest .Eligibility-Criteria .all-content .all-tab .panels ul {
+  font-size: 14px;
+  line-height: 16.24px;
+  font-family: "Gotham Pro";
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.smart-invest .Eligibility-Criteria .all-content .all-tab .panels ul li {
+  font-family: Gotham Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  letter-spacing: -0.3000000119px;
+  text-align: left;
+  margin-left: 22px;
+}
+.smart-invest .slick-sliders {
+  padding: 16px 0px;
+}
+.smart-invest .slick-sliders .slick-dots li button:before {
+  font-size: 12px !important;
+}
+.smart-invest .slick-sliders .Component-slick .slick-slideress-components {
+  display: flex;
+  gap: 98px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .smart-invest .slick-sliders .Component-slick .slick-slideress-components {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+}
+.smart-invest .slick-sliders .Component-slick .slick-slideress-components .image {
+  position: relative;
+}
+@media (max-width: 767px) {
+  .smart-invest .slick-sliders .Component-slick .slick-slideress-components .image {
+    display: none;
+  }
+}
+.smart-invest .slick-sliders .Component-slick .slick-slideress-components .back-imge {
+  height: 516px;
+  position: relative;
+  width: 504px;
+}
+.smart-invest .slick-sliders .Component-slick .slick-slideress-components .frount-image {
+  border-radius: 50%;
+  display: block;
+  height: 4in;
+  left: 122px;
+  position: absolute;
+  top: 66px;
+  width: 4in;
+  z-index: 1;
+}
+.smart-invest .slick-sliders .Component-slick .slick-slideress-components .Component-others {
+  position: relative;
+  padding-top: 148px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .smart-invest .slick-sliders .Component-slick .slick-slideress-components .Component-others {
+    padding-top: 24px;
+  }
+}
+.smart-invest .slick-sliders .Component-slick .slick-slideress-components .Component-others p {
+  font-size: 16px;
+  line-height: 18.56px;
+  font-weight: 400;
+  font-family: "Gotham Pro";
+  margin-bottom: 24px;
+}
+.smart-invest .slick-sliders .Component-slick .slick-slideress-components .Component-others h2 {
+  font-size: 32px;
+  line-height: 34px;
+  font-weight: 500;
+  font-family: "Gotham Pro";
+  margin-bottom: 8px;
+}
+.smart-invest .slick-sliders .Component-slick .slick-slideress-components .Component-others div p {
+  color: #F26E10;
+  font-size: 24px;
+  line-height: 25px;
+  font-family: "Gotham Pro";
+  font-weight: 500;
+}
+.smart-invest .slick-sliders .Component-slick .slick-slideress-components .Component-others div + p {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  color: #615D5F;
+}
+.smart-invest .fund-protofolio {
+  padding: 16px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+.smart-invest .fund-protofolio .header-pro h2 {
+  font-size: 32px;
+  line-height: 34.2px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+}
+.smart-invest .fund-protofolio .fund-cards {
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 1024px) {
+  .smart-invest .fund-protofolio .fund-cards {
+    overflow-x: scroll;
+    padding-bottom: 24px;
+  }
+}
+.smart-invest .fund-protofolio .fund-cards .fund-cards-box {
+  border: 1px solid #DEDCDD;
+  border-radius: 24px;
+  max-width: 410px;
+  width: 100%;
+}
+.smart-invest .fund-protofolio .fund-cards .fund-cards-box .top-components {
+  background: #19417A;
+  color: white;
+  padding: 24px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+.smart-invest .fund-protofolio .fund-cards .fund-cards-box .top-components h3 {
+  font-size: 28px;
+  line-height: 30.2px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+.smart-invest .fund-protofolio .fund-cards .fund-cards-box .top-components p {
+  font-size: 14px;
+  line-height: 22.2px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+}
+.smart-invest .fund-protofolio .fund-cards .fund-cards-box .middle-componets {
+  padding: 16px 24px;
+}
+.smart-invest .fund-protofolio .fund-cards .fund-cards-box .middle-componets p {
+  font-size: 14px;
+  line-height: 16.2px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  color: #221F20;
+}
+.smart-invest .fund-protofolio .fund-cards .fund-cards-box .lower-componets {
+  padding: 16px 24px;
+  border-top: 1px solid #DEDCDD;
+}
+.smart-invest .fund-protofolio .fund-cards .fund-cards-box .lower-componets .lower-pragraph {
+  display: flex;
+  justify-content: space-between;
+}
+.smart-invest .fund-protofolio .fund-cards .fund-cards-box .lower-componets .lower-pragraph p {
+  font-size: 14px;
+  line-height: 22.24px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  color: #615D5F;
+  padding-bottom: 16px;
+}
+.smart-invest .fund-protofolio .fund-cards .fund-cards-box .lower-componets .lower-pragraph .side-pra {
+  font-size: 14px;
+  line-height: 16.24px;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  color: black;
+}/*# sourceMappingURL=invest.css.map */
